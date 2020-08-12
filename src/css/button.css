@@ -1,0 +1,39 @@
+#button{
+    transform: translate(200px,200px);
+    border: solid 1px black;
+    height: 90px;
+    width: 90px;
+    background-color: grey;
+}
+#button-container{
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    
+}
+#main{
+    position: relative;
+    background-color: green;
+    height: 30px;
+    width: 30px;
+    margin:30px;
+
+}
+#main div{
+    position: absolute;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+}
+#menu{
+    top:-30px;
+}
+#backward{
+    left:-30px;
+}
+#forward{
+    right:-30px;
+}
+#play-pause{
+    bottom:-30px;
+}
