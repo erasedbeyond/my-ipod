@@ -1,0 +1,13 @@
+.video-menu{
+    
+}
+.video-menu-list-item{
+ 
+    display: flex;
+    align-items: center;
+    font-size: .7rem;
+    height: 25px;
+    width:90px;
+    text-indent: 10px;
+    background-color: rgb(255, 255, 255,0.8);
+}

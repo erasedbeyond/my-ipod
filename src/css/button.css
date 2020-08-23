@@ -1,6 +1,9 @@
 #button{
-    transform: translate(200px,200px);
-    border: solid 1px black;
+    position: absolute;
+    left: 55px;
+    top:220px;
+   
+    border: solid 1px green;
     height: 90px;
     width: 90px;
     background-color: grey;
@@ -11,29 +14,38 @@
     width: 90px;
     
 }
-#main{
-    position: relative;
-    background-color: green;
+
+#button-container div{
+    position: absolute;
     height: 30px;
     width: 30px;
-    margin:30px;
 
 }
-#main div{
-    position: absolute;
-    background-color: white;
-    height: 30px;
-    width: 30px;
+
+#main{
+    background-color: green;
+    top:30px;
+    left: 30px;
 }
 #menu{
-    top:-30px;
+    background-color: white;
+
+    left:30px;
 }
 #backward{
-    left:-30px;
+    top:30px;
+    background-color: white;
+    
 }
 #forward{
-    right:-30px;
+    top: 30px;
+    left: 60px;
+    background-color: white;
+
 }
 #play-pause{
-    bottom:-30px;
+    top:60px;
+    left: 30px;
+    background-color: white;
+
 }

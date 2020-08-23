@@ -1,0 +1,9 @@
+.i-pod{
+    position: relative;
+    margin: 100px;
+    border:solid 1px black;
+    border-radius: 10px;
+    background-color: rgb(82, 79, 79);
+    width: 200px;
+    height: 350px;
+}

@@ -1,13 +1,11 @@
 import React from 'react';
-import Buttons from './buttons'
-import MenuList from './MenuList'
+import IPod from './IPod'
 
 
 function App() {
   return (
     <div className="App">
-      <MenuList/>
-      <Buttons/>
+      <IPod/>
       
     </div>
   );

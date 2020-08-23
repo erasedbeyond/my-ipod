@@ -1,0 +1,43 @@
+.notification-bar{
+    /* margin-bottom: 4px; */
+    display: flex;
+    justify-content: space-between;
+    height: 16px;
+    background-color: rgb(206, 231, 236);
+}
+.notification-bar img{
+    margin: 2px 4px 2px 2px;
+    width: 12px;
+    height: 12px;
+    /* mix-blend-mode: multiply; */
+}
+@keyframes playing{
+    0%{transform: translateX(0)}
+    50%{transform: translateX(-200px);}
+    50.01%{transform: translateX(150px);}
+    100%{transform: translateX(0px)}
+
+}
+#noti-container-song{
+    width: 160px;
+    overflow: hidden;
+}
+#song-playing{
+
+    margin-top: 1px;
+    font-size: .7rem;
+    align-items: center;
+    width: 160px;
+    white-space: nowrap;
+    animation-name: playing;
+    animation-duration:10s;
+    animation-iteration-count: infinite;
+    animation-delay:0s;
+    animation-timing-function: linear;
+}
+#time{
+    font-size: .8rem;
+}
+#battery-icon{
+    transform: rotate(90deg);
+}
