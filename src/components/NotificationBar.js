@@ -1,9 +1,9 @@
 import React from 'react';
 import '../css/NotificationBar.css';
-import {SongsData} from '../SongsData';
-import play from '../assets/image/playIcon.png';
-import pause from '../assets/image/pauseIcon.png';
-import battery from '../assets/image/battery.png';
+import {SongsData} from '../assets/datafiles/SongsData';
+import play from '../assets/image/playIcon.svg';
+import pause from '../assets/image/pauseIcon.svg';
+import battery from '../assets/image/batteryIcon.svg';
 
 
 class NotificationBar extends React.Component{
@@ -17,7 +17,6 @@ class NotificationBar extends React.Component{
             minutes: new Date().getMinutes()
 
         }
-        // this.song=SongsData[this.props.index]
     }
 
     componentDidMount(){
@@ -44,10 +43,10 @@ class NotificationBar extends React.Component{
         var songPlaying;
         var iconImg;
         if(this.props.isPlaying){
-            iconImg = <img src={play}/>
+            iconImg = <img id="left-noti-icon" alt="playing" src={play}/>
             songPlaying = <div id="noti-container-song"><div id="song-playing">{song.Tittle}- {song.artist}</div></div>;
         }else{
-            iconImg = <img src={pause}/>
+            iconImg = <img id="left-noti-icon" alt="paused" src={pause}/>
         songPlaying = <div id='time'>{hr}:{min} {ampm}</div>;
         }
 
@@ -55,7 +54,7 @@ class NotificationBar extends React.Component{
             <div className="notification-bar">
                 {iconImg}
                 {songPlaying}
-                <img id="battery-icon" src={battery}/>
+                <img id="battery-icon" alt="battery" src={battery}/>
                 
                 
             </div>

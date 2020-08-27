@@ -3,8 +3,14 @@ import '../css/MainMenu.css';
 
 class MainMenu extends React.Component{
     render(){
+
+        const styles = {
+            fontSize:this.props.fontSize,
+            filter:this.props.filter
+        }
+
         return (
-            <div className="main-menu">
+            <div className="main-menu" style={styles} id="left-display" prevmenu="lock-menu">
                 <div className="main-menu-list-item" value="now-playing-menu">Playing</div>
                 <div className="main-menu-list-item" value="song-menu">Songs</div>
                 <div className="main-menu-list-item" value="video-menu">Videos</div>

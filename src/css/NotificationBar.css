@@ -1,16 +1,19 @@
 .notification-bar{
-    /* margin-bottom: 4px; */
+
     display: flex;
     justify-content: space-between;
     height: 16px;
-    background-color: rgb(206, 231, 236);
+    width: 190px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    /* background-color:rgb(71, 169, 194,.8); */
+    background-color: hsla(192,50.2%,52.0%,0.8);
+    /* background-color: hsla(292,50.2%,52.0%,0.8); */
+
+
 }
-.notification-bar img{
-    margin: 2px 4px 2px 2px;
-    width: 12px;
-    height: 12px;
-    /* mix-blend-mode: multiply; */
-}
+
 @keyframes playing{
     0%{transform: translateX(0)}
     50%{transform: translateX(-200px);}
@@ -38,6 +41,14 @@
 #time{
     font-size: .8rem;
 }
+
+#left-noti-icon{
+    margin: 2px 4px 2px 2px;
+    width: 12px;
+    height: 12px;
+}
 #battery-icon{
-    transform: rotate(90deg);
+    margin: 1px 4px 1px 2px;
+    width: 14px;
+    height: 14px;
 }
